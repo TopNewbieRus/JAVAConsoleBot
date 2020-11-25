@@ -1,10 +1,8 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class Bot {
@@ -14,6 +12,7 @@ public class Bot {
     protected static final String TASK_NUMBER = "Введите номер задания";
     protected static final String TRUE_ANSWER = "Правильный ответ!";
     protected static final String FALSE_ANSWER = "Правильный ответ: ";
+    protected static final String STOP = "Ты закончил тест";
 
     public static Pair sendTask(int number) throws IOException {
         if (number > 0 && number < 6) {

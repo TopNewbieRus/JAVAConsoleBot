@@ -29,6 +29,7 @@ public class ConsoleBot {
             return "Тебе понадоилась помощь ? Тогда вот список доступных комманд \n /help - поможет еще раз \n /task - ты выберешь задание";
         else if (command.equals(Bot.TASK))
             return Bot.TASK_NUMBER;
-        return "Нет такой команды, думай лучше чем что-то писать ";
+        else
+            return ("Нет такой команды, думай лучше чем что-то писать ");
     }
 }
