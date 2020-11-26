@@ -20,27 +20,23 @@ public class Bot {
                     + number + ".txt"));
             try (BufferedReader in = new BufferedReader(new FileReader(path))) {
                 String line;
-                StringBuilder ex = new StringBuilder();
-                ArrayList<String> exercise = new ArrayList<>();
+                StringBuilder ts = new StringBuilder();
+                ArrayList<String> task = new ArrayList<>();
                 while ((line = in.readLine()) != null){
-                    exercise.add(line);
+                    task.add(line);
                 }
-                var answer = exercise.remove(exercise.size() - 1);
-                for (String s : exercise) {
-                    ex.append(s);
-                    ex.append('\n');
+                var answer = task.remove(task.size() - 1);
+                for (String s : task) {
+                    ts.append(s);
+                    ts.append('\n');
                 }
-                return new Pair(answer, ex.toString());
+                return new Pair(answer, ts.toString());
             }
         }
         else return new Pair("нет такого вопроса ", " ");
     }
 
-    /**
-     *
-     * @param answer - ответ
-     * @return верен ли ответ
-     */
+
     public Boolean compareAnswer(String answer){
         Scanner text = new Scanner(System.in);
         String str = text.nextLine();
