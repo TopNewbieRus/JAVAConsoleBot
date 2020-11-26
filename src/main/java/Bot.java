@@ -12,7 +12,6 @@ public class Bot {
     protected static final String TASK_NUMBER = "Введите номер задания";
     protected static final String TRUE_ANSWER = "Правильный ответ!";
     protected static final String FALSE_ANSWER = "Правильный ответ: ";
-    protected static final String STOP = "Ты закончил тест";
 
     public static Pair sendTask(int number) throws IOException {
         if (number > 0 && number < 6) {
