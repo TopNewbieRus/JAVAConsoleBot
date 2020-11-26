@@ -30,6 +30,6 @@ public class ConsoleBot {
         else if (command.equals(Bot.TASK))
             return Bot.TASK_NUMBER;
         else
-            return ("Нет такой команды, думай лучше чем что-то писать ");
+            return ("Нет такой команды :(");
     }
 }
