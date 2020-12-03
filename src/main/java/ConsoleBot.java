@@ -24,9 +24,9 @@ public class ConsoleBot {
                 return Bot.FALSE_ANSWER + mes.getAnswer();
         }
         else if (command.equals(Bot.START))
-            return "Привет этот бот проверит как ты занешь исторические даты \n напиши номер задания с которого хочешь начать ";
+            return "Привет этот бот проверит как ты знаешь исторические даты \n напиши номер задания с которого хочешь начать ";
         else  if (command.equals(Bot.HELP))
-            return "Тебе понадобилась помощь ? Тогда вот список доступных комманд \n /help - поможет еще раз \n /task - ты выберешь задание";
+            return "Тебе понадобилась помощь ? Тогда вот список доступных команд \n /help - поможет еще раз \n /task - ты выберешь задание";
         else if (command.equals(Bot.TASK))
             return Bot.TASK_NUMBER;
         else
