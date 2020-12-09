@@ -2,6 +2,10 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
+/**
+ * то как все работает в боте
+ */
+
 public class ConsoleBot {
     public static void chatToUser(Bot Bot) throws IOException {
         System.out.println("Если ты готов начать напиши '/start' ");

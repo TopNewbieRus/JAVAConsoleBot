@@ -1,3 +1,7 @@
+/**
+ * Это задает пару вопрос и ответ
+ */
+
 public class Pair {
     private static String answer;
     private static String task;

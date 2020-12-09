@@ -5,6 +5,10 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Основная логика консольного бота и его функции
+ */
+
 public class Bot {
     protected static final String START = "/start";
     protected static final String HELP = "/help";
